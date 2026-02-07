@@ -45,4 +45,5 @@ const NavBar = () => {
 	);
 };
 
+// 📝 CORREGIDO: Agregado punto y coma
 export default NavBar;
