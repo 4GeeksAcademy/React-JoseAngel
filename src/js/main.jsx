@@ -9,15 +9,17 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
+// 📝 CORREGIDO: El componente se llama Jumbotron (singular), no Jumbotrons
 import NavBar from './components/Home';
-import Jumbotrons from './components/Jumbotron';
+import Jumbotron from './components/Jumbotron';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
     <NavBar />
-    <Jumbotrons />
+    {/* 📝 CORREGIDO: Nombre actualizado a Jumbotron (singular) */}
+    <Jumbotron />
     <Cards/>
     <Footer/>
   </div>
