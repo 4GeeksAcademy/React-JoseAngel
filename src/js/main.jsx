@@ -9,16 +9,16 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import NavBar from './components/Home';
-import Jumbotrons from './components/Jumbotron';
+import Navbar from './components/Navbar';
+import Jumbotron from './components/Jumbotron';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
-    <NavBar />
-    <Jumbotrons />
-    <Cards/>
-    <Footer/>
+    <Navbar />
+    <Jumbotron />
+    <Cards />
+    <Footer />
   </div>
 )

@@ -1,0 +1,68 @@
+import React from "react";
+
+/**
+ * Navbar Component
+ * 
+ * Renders a responsive navigation bar with Bootstrap classes.
+ * Includes navigation links, search form, and authentication buttons.
+ * 
+ * @component
+ * @example
+ * return <Navbar />
+ */
+const Navbar = () => {
+	return (
+		<header className="navbar-header p-3 text-bg-dark">
+			<div className="container">
+				<div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+					<a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+						<span className="navbar-brand">🚀 Brand</span>
+					</a>
+					<ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+						<li>
+							<a href="#" className="nav-link px-2 text-secondary hover-light">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" className="nav-link px-2 text-white hover-light">Features</a>
+						</li>
+						<li>
+							<a href="#" className="nav-link px-2 text-white hover-light">
+								Pricing
+							</a>
+						</li>
+						<li>
+							<a href="#" className="nav-link px-2 text-white hover-light">
+								FAQs
+							</a>
+						</li>
+						<li>
+							<a href="#" className="nav-link px-2 text-white hover-light">
+								About
+							</a>
+						</li>
+					</ul>
+					<form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+						<input 
+							type="search" 
+							className="form-control form-control-dark text-bg-dark search-input" 
+							placeholder="Search..." 
+							aria-label="Search" 
+						/>
+					</form>
+					<div className="text-end">
+						<button type="button" className="btn btn-outline-light me-2 btn-hover">
+							Login
+						</button>
+						<button type="button" className="btn btn-warning btn-hover">
+							Sign-up
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	);
+};
+
+export default Navbar;
